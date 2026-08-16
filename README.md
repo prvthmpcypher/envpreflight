@@ -6,7 +6,7 @@ One command, one report. `envpreflight` reads the manifests already in the repos
 
 [![CI](https://github.com/prvthmpcypher/envpreflight/actions/workflows/ci.yml/badge.svg)](https://github.com/prvthmpcypher/envpreflight/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/npm/v/envpreflight.svg)](https://www.npmjs.com/package/envpreflight)
+[![npm version](https://img.shields.io/npm/v/@envpreflight/cli.svg)](https://www.npmjs.com/package/@envpreflight/cli)
 
 ---
 
@@ -15,13 +15,13 @@ One command, one report. `envpreflight` reads the manifests already in the repos
 Run directly from any project root without installation:
 
 ```bash
-npx envpreflight
+npx @envpreflight/cli
 ```
 
 Or install globally:
 
 ```bash
-npm install -g envpreflight
+npm install -g @envpreflight/cli
 ```
 
 ---

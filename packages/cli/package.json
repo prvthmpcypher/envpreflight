@@ -1,6 +1,6 @@
 {
-  "name": "envpreflight",
-  "version": "1.0.0",
+  "name": "@envpreflight/cli",
+  "version": "1.0.1",
   "description": "Check your machine can actually run this project — before you waste a day finding out it can't.",
   "type": "module",
   "author": "Poorvith M P",
@@ -14,7 +14,8 @@
     "access": "public"
   },
   "bin": {
-    "envpreflight": "./dist/bin.js"
+    "envpreflight": "./dist/bin.js",
+    "envpreflight-cli": "./dist/bin.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

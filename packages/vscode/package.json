@@ -1,0 +1,43 @@
+{
+  "name": "envpreflight-vscode",
+  "displayName": "envpreflight",
+  "description": "Check your machine can actually run this project — before you waste a day finding out it can't.",
+  "version": "0.1.0",
+  "publisher": "poorvith",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Testing"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.cjs",
+  "contributes": {
+    "commands": [
+      {
+        "command": "envpreflight.check",
+        "title": "envpreflight: Run checks"
+      },
+      {
+        "command": "envpreflight.showPanel",
+        "title": "envpreflight: Show report panel"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "@envpreflight/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.8.0",
+    "tsup": "^8.4.0"
+  }
+}

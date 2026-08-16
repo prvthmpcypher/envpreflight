@@ -1,0 +1,18 @@
+{
+  "name": "envpreflight-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.22.0",
+  "scripts": {
+    "build": "pnpm --filter \"@envpreflight/*\" --filter \"envpreflight\" run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.8.0",
+    "tsup": "^8.4.0",
+    "vitest": "^3.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@envpreflight/core",
+  "version": "0.1.0",
+  "description": "Core check logic for envpreflight with zero UI dependencies",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "execa": "^9.5.2",
+    "semver": "^7.7.1",
+    "smol-toml": "^1.3.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/semver": "^7.5.8",
+    "typescript": "^5.8.0",
+    "tsup": "^8.4.0"
+  }
+}

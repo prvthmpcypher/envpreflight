@@ -1,0 +1,18 @@
+packages:
+  - 'packages/*'
+  - 'docs'
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+onlyBuiltDependencies:
+  - esbuild
+  - '@swc/core'
+  - sharp
+
+overrides:
+  postcss: '>=8.5.23'
+  esbuild: '>=0.28.2'
+  cross-spawn: '>=7.0.6'
+  sharp: '>=0.35.0'

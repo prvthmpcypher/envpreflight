@@ -1,8 +1,9 @@
 {
   "name": "envpreflight-vscode",
   "displayName": "envpreflight",
+  "private": true,
   "description": "Check your machine can actually run this project — before you waste a day finding out it can't.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "poorvith",
   "engines": {
     "vscode": "^1.85.0"

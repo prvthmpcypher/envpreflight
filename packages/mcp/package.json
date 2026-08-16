@@ -1,8 +1,21 @@
 {
   "name": "@envpreflight/mcp",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "MCP server for envpreflight to let AI coding agents inspect local environment health",
   "type": "module",
+  "author": "Poorvith M P",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prvthmpcypher/envpreflight.git",
+    "directory": "packages/mcp"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "bin": {
     "envpreflight-mcp": "./dist/index.js"
   },

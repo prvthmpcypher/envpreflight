@@ -1,8 +1,21 @@
 {
   "name": "@envpreflight/core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Core check logic for envpreflight with zero UI dependencies",
   "type": "module",
+  "author": "Poorvith M P",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prvthmpcypher/envpreflight.git",
+    "directory": "packages/core"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",

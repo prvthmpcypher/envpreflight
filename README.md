@@ -18,10 +18,13 @@ Run directly from any project root without installation:
 npx @envpreflight/cli
 ```
 
-Or install globally:
+Or install globally to use the direct `envpreflight` command anywhere:
 
 ```bash
 npm install -g @envpreflight/cli
+
+# Then run anywhere:
+envpreflight
 ```
 
 ---

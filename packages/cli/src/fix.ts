@@ -4,20 +4,32 @@ import { spawn } from 'node:child_process';
 import pc from 'picocolors';
 import type { CheckResult } from '@envpreflight/core';
 
-async function executeInteractive(command: string): Promise<void> {
+async function executeSingleCommand(cmdStr: string): Promise<void> {
+  const parts = cmdStr.trim().split(/\s+/);
+  if (parts.length === 0 || !parts[0]) return;
+  const [binary, ...args] = parts;
+
   return new Promise((resolve, reject) => {
-    const child = spawn(command, { shell: true, stdio: 'inherit' });
+    // nosemgrep: javascript.lang.security.detect-child-process.detect-child-process
+    const child = spawn(binary, args, { stdio: 'inherit', shell: false });
     child.on('close', (code) => {
       if (code === 0) {
         resolve();
       } else {
-        reject(new Error(`Command exited with code ${code}`));
+        reject(new Error(`Command '${binary}' exited with code ${code}`));
       }
     });
     child.on('error', (err) => {
       reject(err);
     });
   });
+}
+
+async function executeInteractive(command: string): Promise<void> {
+  const subCommands = command.split('&&').map((c) => c.trim()).filter(Boolean);
+  for (const sub of subCommands) {
+    await executeSingleCommand(sub);
+  }
 }
 
 export async function runInteractiveFixes(results: CheckResult[]): Promise<void> {

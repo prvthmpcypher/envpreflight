@@ -2,8 +2,13 @@ node_modules/
 dist/
 .turbo/
 .next/
+docs/.next/
+out/
+docs/out/
 *.tsbuildinfo
 coverage/
 .DS_Store
 *.vsix
 .system_generated/
+*.log
+semgrep-report.json

@@ -1,0 +1,8 @@
+[allowlist]
+description = "Ignore build artifacts and dependency folders"
+paths = [
+    '''docs/\.next/.*''',
+    '''docs/out/.*''',
+    '''node_modules/.*''',
+    '''dist/.*''',
+]

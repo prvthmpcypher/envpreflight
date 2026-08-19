@@ -10,7 +10,7 @@ Here's how to get set up and work on this repo without any friction.
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/prvthmpcypher/envpreflight.git
+   git clone https://github.com/poorvith-mp/envpreflight.git
    cd envpreflight
    ```
 

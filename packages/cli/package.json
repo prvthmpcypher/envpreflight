@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prvthmpcypher/envpreflight.git",
+    "url": "https://github.com/poorvith-mp/envpreflight.git",
     "directory": "packages/cli"
   },
   "publishConfig": {

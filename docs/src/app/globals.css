@@ -74,11 +74,9 @@ header {
   letter-spacing: -0.02em;
 }
 
-.brand-dot {
-  width: 10px;
-  height: 10px;
-  background-color: var(--accent-green);
-  border-radius: 50%;
+.brand-mark {
+  width: 34px;
+  height: 34px;
 }
 
 .nav-links {

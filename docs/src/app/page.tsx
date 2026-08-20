@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className="container">
           <nav className="nav">
             <div className="brand">
-              <div className="brand-dot" />
+              <img src="/logo-mark.svg" alt="" className="brand-mark" />
               <span>envpreflight</span>
             </div>
             <div className="nav-links">

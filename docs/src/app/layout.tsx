@@ -16,6 +16,18 @@ export const metadata: Metadata = {
     'vscode extension',
     'mcp server',
   ],
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/apple-touch-icon.png',
+    other: { rel: 'icon', url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+  },
+  openGraph: {
+    title: 'envpreflight — Know whether the repository can run',
+    description: 'Check runtimes, services, Docker, ports, and environment keys before setup becomes debugging.',
+    type: 'website',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'envpreflight scan report' }],
+  },
+  twitter: { card: 'summary_large_image' },
 };
 
 export default function RootLayout({
